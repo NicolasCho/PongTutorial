@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e234bb591f4b74f7cb41685621149a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer1Goal: 0
+  isPlayer1Goal: 1
 --- !u!1 &1558830269
 GameObject:
   m_ObjectHideFlags: 0

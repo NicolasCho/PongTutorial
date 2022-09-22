@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,11 +23,17 @@ public class GameManager : MonoBehaviour
     
     public void Player1Scored(){
         Player1Score++;
+        if(Player1Score > 9){
+            SceneManager.LoadScene("Menu");
+        }
         Player1Text.GetComponent<TextMeshProUGUI>().text = Player1Score.ToString();
         ResetPosition();
     }
     public void Player2Scored(){
         Player2Score++;
+        if(Player2Score > 9){
+            SceneManager.LoadScene("Menu");
+        }
         Player2Text.GetComponent<TextMeshProUGUI>().text = Player2Score.ToString();
         ResetPosition();
     }
